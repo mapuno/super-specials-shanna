@@ -8,14 +8,14 @@
 
     You will need to install the following to be able to run and build the static content:
 
-    * nodejs
-    * gatsby cli
+    - nodejs
+    - gatsby cli
 
     To install gatsby cli run the following:
 
     ```shell
     npm install -g gatsby-cli
-     ```
+    ```
 
 2.  **Start the dev server**
 
@@ -29,8 +29,8 @@
 
     Run the following command to build the static site. The site will be built into the ./public folder
 
-      ```shell
-      gatsby build
-      ```
+    ```shell
+    gatsby build
+    ```
 
     Once the site is built you can deploy it to a web server of some kind.

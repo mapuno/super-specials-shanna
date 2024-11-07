@@ -1,9 +1,11 @@
 module.exports = {
   siteMetadata: {
     title: `Super Specials`,
+    siteUrl: `https://mapuno.github.io/superspecials-shanna`,
     description: `Super specials deals just for you!`,
     author: `@gatsbyjs`,
   },
+  pathPrefix: `/super-specials-shanna`,
   plugins: [
     `gatsby-plugin-react-helmet`,
     {
