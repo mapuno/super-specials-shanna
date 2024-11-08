@@ -27,8 +27,8 @@ resource "github_repository_file" "gatsby_site_files" {
   for_each   = fileset("public", "**/*")  # This fetches all files in the "public" directory
   repository = github_repository.gatsby_site.name
   branch     = "gh-pages"                 # Target GitHub Pages branch
-  file       = each.value
-  content    = filebase64("public/${each.value}")
+  file       = "public/${each.value}"
+  content    = base64encode(filebase64("public/${each.value}"))
   commit_message = "Deploy Gatsby site files including PWA manifest"
 
   # Ensure the branch is created if it doesn't exist
